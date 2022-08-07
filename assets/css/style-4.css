@@ -110,19 +110,7 @@
 }
 
 #details {
-    background:#1b1b2b;
-    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
-    height: 100vh;
-    background-size: cover;
-    padding:75px;
-    text-align:center;
-    font-family: 'Oswald', sans-serif;
-    font-size: 18px;
-    height: 100vh;
-      }
-
-#dest {
-    background-image: url(/images/LagoGarda.jpg);
+    background-image: url('/images/LagoGarda.jpg');
     height: 100vh;
     background-size: cover;
     padding:75px;
@@ -136,19 +124,19 @@
     font-size: 100px;
     font-weight:100;
     position: relative;
-    top: 20%; left: 0%;
+    top: 0%; left: 0%;
     color: rgba(255, 255, 255, 1)
     }
-
-
-#program {
-    background:#1b1b2b;
-    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
-    height: 100vh;
-    background-size: cover;
-    padding:75px;
-    text-align:center;
-    font-family: 'Oswald', sans-serif;
-    font-size: 18px;
-    height: 100vh;
-      }
+.subtitle {
+    padding-left: 20px;
+    font-size: 100px;
+    font-weight:100;
+    position: relative;
+    top: 20%; left: -20%;
+    color: rgba(255, 255, 255, 1);
+    display: inline-block;
+    text-align: justify;
+    -moz-text-align-last: justify;
+    -webkit-text-align-last: justify; /* not implemented yet, and will not be */
+    text-align-last: justify; /* IE */
+    }
