@@ -66,7 +66,6 @@
   transform: translateY(100%);
 }
 
-
 #home {
   height: 100vh;
   background-size: cover;
@@ -108,6 +107,45 @@
     background-image: url('/images/castle.jpg');
   }
 }
+.anitext::before {
+        font-family: 'Romantically Free For Personal', sans-serif;
+        content: "Fabian & Melanie";
+        animation: animate infinite 12s;
+        padding-left: 10px;
+        font-size: 50px;
+        font-weight:100;
+        position: relative;
+        top: 20%; left: 0%;
+        color: rgba(255, 255, 255, 1)
+    }
+@keyframes animate {
+  0% {
+        content: "Melanie & Fabian"
+  }
+  15% {
+        content: "Melanie & Fabian"
+  }
+  20% {
+        content: "We fell in love"
+  }
+  40% {
+        content: "We fell in love"
+  }
+  45% {
+        content: "She said yes"
+  }
+  65% {
+        content: "She said yes"
+  }
+  70% {
+        content: "We're getting married"
+  }
+  95% {
+        content: "We're getting married"
+  }
+  100% {
+        content: "Melanie & Fabian"
+  }}
 
 #details {
     background-image: url('/images/LagoGarda.jpg');
@@ -119,24 +157,29 @@
     font-size: 18px;
     height: 100vh;
       }
-.title {
-    padding-left: 10px;
-    font-size: 100px;
-    font-weight:100;
-    position: relative;
-    top: 0%; left: 0%;
-    color: rgba(255, 255, 255, 1)
-    }
 .subtitle {
-    padding-left: 20px;
-    font-size: 100px;
-    font-weight:100;
-    position: relative;
-    top: 20%; left: -20%;
-    color: rgba(255, 255, 255, 1);
+  font-size: 30px;
+  display: flex;
+  font-family: 'Romantically Free For Personal', sans-serif;
+  color: rgba(255, 255, 255, 1)
+}
+.subtitle.space-around {
+  justify-content: space-around;
+}
+.subtitle.space-between {
+  justify-content: space-between;
+}
+.item {
+    vertical-align: top;
     display: inline-block;
-    text-align: justify;
-    -moz-text-align-last: justify;
-    -webkit-text-align-last: justify; /* not implemented yet, and will not be */
-    text-align-last: justify; /* IE */
-    }
+    text-align: center;
+    width: 50px;
+}
+.i {
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+}
+.caption {
+    display: block;
+}
