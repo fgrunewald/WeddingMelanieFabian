@@ -152,18 +152,15 @@
     background-color: rgba(217, 210, 185, 0.75);
     height: 100vh;
     background-size: cover;
-    padding:75px;
+    padding:100px;
     text-align:center;
     font-family: 'Oswald', sans-serif;
     font-size: 18px;
     height: 100vh;
       }
 .subtitle {
-  font-size: 30px;
   display: flex;
-  font-family: 'Romantically Free For Personal', sans-serif;
-  color: rgba(255, 255, 255, 1);
-  text-decoration: underline;
+  padding: 20px;
 }
 .subtitle.space-around {
   justify-content: space-around;
@@ -180,9 +177,25 @@
 .i {
     width: 30px;
     height: 20px;
-    background-color: blue;
 }
 .caption {
+    font-family: 'Romantically Free For Personal', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+    display: block;
+}
+.line {
+    width: 212px;
+    height: 47px;
+    border-bottom: 2px solid white;
+    display: block;
+    }
+.info {
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 30px;
     display: block;
 }
 
