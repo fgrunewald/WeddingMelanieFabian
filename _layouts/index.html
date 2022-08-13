@@ -7,6 +7,8 @@
   <link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
   <link href="http://fonts.cdnfonts.com/css/romantically-free-for-personal" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/add-to-calendar-button@1/assets/css/atcb.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,100,0,0" />
   <style>
 	/* Common Styles - Can ignore*/
 	body{
@@ -55,6 +57,31 @@
 <div class="line"></div>
 <span class="info-1">1st of June</span>
 <span class="info-2">2022</span>
+<div class="atcb" style="display:block;margin-top: 100px; background: transparent">
+{
+  "inline":true,
+  "label": "ADD TO CALENDER",
+  "background": false,
+  "name":"Reminder to star the add-to-calendar-button repo",
+  "description":"Check out the maybe easiest way to include add-to-calendar-buttons to your website at:<br>→ [url]https://github.com/add2cal/add-to-calendar-button[/url]",
+  "startDate":"2023-02-14",
+  "endDate":"2023-02-18",
+  "startTime":"10:15",
+  "endTime":"23:30",
+  "location":"World Wide Web",
+  "options":[
+    "Apple",
+    "Google",
+    "iCal",
+    "Microsoft365",
+    "MicrosoftTeams",
+    "Outlook.com",
+    "Yahoo"
+  ],
+  "timeZone":"Europe/Berlin",
+  "iCalFileName":"Reminder-Event"
+}
+</div>
 </div>
 <div>
 <i class="material-icons-outlined" style="font-size:50px;color:white;">castle</i>
@@ -63,18 +90,19 @@
 <span class="info-1">Torre San Marco</span>
 <span class="info-2">25083 Gardone Riviera</span>
 <span class="info-2">Lago di Garda Italy</span>
-<div class="button">
-<a href="https://www.google.nl/maps/place/La+Torre+di+San+Marco/@45.620696,10.5654335,17z/data=!3m1!4b1!4m5!3m4!1s0x47818c210975bb83:0xd45ebe89228a2cb8!8m2!3d45.620696!4d10.5676222" class="link-1">See on Map</a>
+<div class="atcb-button" style="display:block; margin-top: 70px;">
+<span class="material-symbols-outlined" style="vertical-align:middle; font-size:20px;color:black; display: inline;">map</span>
+<a class="link-1" href="https://www.google.nl/maps/place/La+Torre+di+San+Marco/@45.620696,10.5654335,17z/data=!3m1!4b1!4m5!3m4!1s0x47818c210975bb83:0xd45ebe89228a2cb8!8m2!3d45.620696!4d10.5676222">SEE ON MAP</a>
 </div>
 </div>
 </div>
-
-
 </section>
 
 <section id="where">
 
+</div>
 </section>
 
+<script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@1" async defer></script>
 </body>
 </html>

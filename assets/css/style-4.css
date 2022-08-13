@@ -205,19 +205,12 @@
     color: rgba(255, 255, 255, 1);
     display: block;
 }
-.button {
-    border: 2px solid rgba(255, 255, 255, 1);
-    margin-top: 80px;
-    display: block;
-}
 .link-1 {
-    text-transform: uppercase;
-    font-family: 'Oswald', sans-serif;
-    font-size: 25px;
-    font-weight: 100;
-    color: rgba(255, 255, 255, 1);
+    color: black;
+    font-size: 16px;
+    display: inline;
+    text-decoration: none;
 }
-
 
 #where {
     height: 100vh;
