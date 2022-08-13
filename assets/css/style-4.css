@@ -12,6 +12,7 @@
   text-align: center;
   text-transform: uppercase;
   font-weight: 500;
+  font-size: 20px;
   position: fixed; /* Set the navbar to fixed position */
   width: 100%; /* Full width */
   top: 0px;
@@ -31,7 +32,7 @@
 }
 .menu-4 a {
   padding: 0.3em 0;
-  color: #212121;
+  color: rgba(255,255,255,0.5);
   position: relative;
   display: inline-block;
   letter-spacing: 1px;
@@ -50,7 +51,7 @@
   height: 3px;
   width: 100%;
   content: "";
-  background-color: #e67e22;
+  background-color: rgba(254, 213, 125, 1.00);
 }
 .menu-4 a:after {
   padding: 0.3em 0;
@@ -58,7 +59,7 @@
   bottom: 100%;
   left: 0;
   content: attr(data-hover);
-  color: #212121;
+  color: rgba(255, 255, 255, 1.0);
   white-space: nowrap;
 }
 .menu-4 li:hover a,
@@ -148,7 +149,7 @@
   }}
 
 #details {
-    background-image: url('/images/LagoGarda.jpg');
+    background-color: rgba(217, 210, 185, 0.75);
     height: 100vh;
     background-size: cover;
     padding:75px;
@@ -161,7 +162,8 @@
   font-size: 30px;
   display: flex;
   font-family: 'Romantically Free For Personal', sans-serif;
-  color: rgba(255, 255, 255, 1)
+  color: rgba(255, 255, 255, 1);
+  text-decoration: underline;
 }
 .subtitle.space-around {
   justify-content: space-around;
@@ -173,13 +175,22 @@
     vertical-align: top;
     display: inline-block;
     text-align: center;
-    width: 50px;
+    width: 20px;
 }
 .i {
     width: 30px;
-    height: 30px;
+    height: 20px;
     background-color: blue;
 }
 .caption {
     display: block;
 }
+
+#where {
+    height: 100vh;
+    background-image: url('/images/LagoGarda.jpg');
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    }
