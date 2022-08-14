@@ -11,11 +11,18 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,100,0,0" />
   <style>
 	/* Common Styles - Can ignore*/
-	body{
+    html { 
+      margin: 0;
+      padding: 0;
+	  height: 100vh;
+    }
+	body {
 	  text-align:center;
 	  font-family: 'Avenir Next', sans-serif;
 	  font-size: 18px;
 	  height: 100vh;
+      margin: 0;
+      padding: 0;
 	}
 	h1{
 	  color:#212121;
@@ -31,6 +38,7 @@
 		  <li><a href="#home" data-hover="Home">Home</a></li>
 		  <li><a href="#details" data-hover="The Details">The Details</a></li>
 		  <li><a href="#where" data-hover="The Location">The Location</a></li>
+		  <li><a href="#program" data-hover="The Program">The Program</a></li>
 		  <li><a href="#rsvp" data-hover="RSVP">RSVP</a></li>
 		</ul>
 	</nav>
@@ -46,7 +54,11 @@
 
 <div class="subtitle space-around">
 <div>
-<i class="material-icons-outlined" style="font-size:50px;color:white;">groups</i>
+<span class="dummy"> &nbsp</span>
+<span class="dummy"> &nbsp</span>
+<span class="dummy"> &nbsp</span>
+<span class="dummy"> &nbsp</span>
+<i class="material-icons-outlined" style="font-size:50px;color:rgba(251, 215, 161, 1.0);">groups</i>
 <span class="caption">Who</span>
 <span class="dummy">&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</span>
 <div class="line"></div>
@@ -54,7 +66,11 @@
 <span class="info-2">from near and far</span>
 </div>
 <div>
-<i class="material-icons-outlined" style="font-size:50px;color:white;">watch</i>
+<span class="dummy"> &nbsp</span>
+<span class="dummy"> &nbsp</span>
+<span class="dummy"> &nbsp</span>
+<span class="dummy"> &nbsp</span>
+<i class="material-icons-outlined" style="font-size:50px;color:rgba(251, 215, 161, 1.0);">watch</i>
 <span class="caption">When</span>
 <span class="dummy">&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</span>
 <div class="line"></div>
@@ -87,7 +103,11 @@
 </div>
 </div>
 <div>
-<i class="material-icons-outlined" style="font-size:50px;color:white;">castle</i>
+<span class="dummy"> &nbsp</span>
+<span class="dummy"> &nbsp</span>
+<span class="dummy"> &nbsp</span>
+<span class="dummy"> &nbsp</span>
+<i class="material-icons-outlined" style="font-size:50px;color:rgba(251, 215, 161, 1.0);">castle</i>
 <span class="caption">Where</span>
 <span class="dummy">&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</span>
 <div class="line"></div>
@@ -106,17 +126,22 @@
 </section>
 
 <section id="where">
-
+<div class="text-box">
+<span class="title">The Location</span>
+<span class="content"> This is the text that goes with the content section. I write a lot so we can see if it linebreaks or what happens to the text in case that it does not fit into the box.</span>
 </div>
 </section>
 
+<section id="program">
+
+</section>
+
 <section id="rsvp">
-<iframe class="rsvpform" src="https://docs.google.com/forms/d/e/1FAIpQLSfbjOKS3cpsrBdTmRVoSlCwaR7-eywjoQqpBI7bkBtCdWkJCg/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<iframe class="rsvpform" src="https://docs.google.com/forms/d/e/1FAIpQLSd0EDNhzY5wRM6N8qjBJ_AmXgxaRVVBneeSHzi2DlGDrbezXw/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 </section>
 
 <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@1" async defer></script>
-<script type="text/javascript" language="javascript"> 
-$('.rsvpform').css('height', $(window).height()+'px');
-</script>
+<script type="text/javascript" language="javascript"> $('.rsvpform').css('height', $(window).height()+'px');</script>
+<script type="text/javascript" language="javascript"> $('.locimg').css('max-height', $(window).height()+'px');</script>
 </body>
 </html>
