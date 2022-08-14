@@ -17,7 +17,7 @@
   width: 100%; /* Full width */
   top: 0px;
   border: 2px rgba(255,255,255,1.0);
-  border-style: solid hidden solid hidden;
+  border-style: hidden hidden solid hidden;
 }
 .menu-4 * {
   box-sizing: border-box;
@@ -32,7 +32,7 @@
 }
 .menu-4 a {
   padding: 0.3em 0;
-  color: rgba(255,255,255,0.5);
+  color: rgba(155,150,150,0.8);
   position: relative;
   display: inline-block;
   letter-spacing: 1px;
@@ -199,7 +199,7 @@
     font-family: 'Avenir Next Condensed', sans-serif;
     font-size: 28px;
     font-weight: 500;
-    color: rgba(125, 125, 125, 1);
+    color: rgba(150, 150, 150, 1);
     margin-top: 40px;
     display: block;
 }
@@ -207,7 +207,7 @@
     font-family: 'Avenir Next', sans-serif;
     font-size: 25px;
     font-weight: 50;
-    color: rgba(125, 125, 125, 1);
+    color: rgba(150, 150, 150, 1);
     display: block;
 }
 .link-1 {
@@ -225,3 +225,13 @@
     -o-background-size: cover;
     -webkit-background-size: cover;
     }
+
+#rsvp {
+    background-color: rgba(217, 210, 185, 0.75);
+    height: 100vh;
+    background-size: cover;
+    padding:100px;
+      }
+.rsvpform {opacity: 1;
+          }
+        }

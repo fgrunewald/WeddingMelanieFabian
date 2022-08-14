@@ -13,7 +13,7 @@
 	/* Common Styles - Can ignore*/
 	body{
 	  text-align:center;
-	  font-family: 'Oswald', sans-serif;
+	  font-family: 'Avenir Next', sans-serif;
 	  font-size: 18px;
 	  height: 100vh;
 	}
@@ -31,6 +31,7 @@
 		  <li><a href="#home" data-hover="Home">Home</a></li>
 		  <li><a href="#details" data-hover="The Details">The Details</a></li>
 		  <li><a href="#where" data-hover="The Location">The Location</a></li>
+		  <li><a href="#rsvp" data-hover="RSVP">RSVP</a></li>
 		</ul>
 	</nav>
 <!-- Navigation Bar End -->
@@ -109,6 +110,13 @@
 </div>
 </section>
 
+<section id="rsvp">
+<iframe class="rsvpform" src="https://docs.google.com/forms/d/e/1FAIpQLSfbjOKS3cpsrBdTmRVoSlCwaR7-eywjoQqpBI7bkBtCdWkJCg/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</section>
+
 <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@1" async defer></script>
+<script type="text/javascript" language="javascript"> 
+$('.rsvpform').css('height', $(window).height()+'px');
+</script>
 </body>
 </html>
