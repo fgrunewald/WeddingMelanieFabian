@@ -170,6 +170,8 @@
 </section>
 
 <section id="rsvp">
+<span class="dummy"> &nbsp</span>
+<span class="dummy"> &nbsp</span>
 <iframe class="rsvpform" src="https://docs.google.com/forms/d/e/1FAIpQLSd0EDNhzY5wRM6N8qjBJ_AmXgxaRVVBneeSHzi2DlGDrbezXw/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 </section>
 
@@ -191,6 +193,48 @@ $(document).ready(function(){
    });
 });
 </script>
+<!--
+<script>
+$(document).ready(function(){
+   var scroll_start = 0;
+   var item_list = $(document).getElementsByClassName('menu-4');
+   var sections = $(document).getElementsByTagName('section');
 
+   $(document).scroll(function() {
+    scroll_start = $(this).scrollTop();
+    var i = 0
+    for (var 
+
+});
+});
+
+var i = 0;
+for (var obj in myArray) {
+    alert(i)
+    i++
+}
+
+  window.addEventListener("scroll", function (event) {
+    var scroll = this.scrollY;
+    var item = document.getElementsByClassName('navbar-item');
+    /* console.log(scroll); */
+    if (scroll < 565) {
+      item[1].classList.add('is-active');
+      item[2].classList.remove('is-active');
+      item[3].classList.remove('is-active');
+    }
+    if (scroll > 565 && scroll < 1130) {
+      item[1].classList.remove('is-active');
+      item[2].classList.add('is-active');
+      item[3].classList.remove('is-active');
+    }
+    if (scroll > 1130) {
+      item[1].classList.remove('is-active');
+      item[2].classList.remove('is-active');
+      item[3].classList.add('is-active');
+    }
+  });
+</script>
+-->
 </body>
 </html>

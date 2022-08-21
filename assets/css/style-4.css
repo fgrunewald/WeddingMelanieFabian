@@ -268,9 +268,11 @@
       }
 
 #rsvp {
-    background-image: url("/images/bg.jpg");
+    background-image:url("/images/Flowers_right.png"), url("/images/Flowers_left.png"), url("/images/bg.jpg");
     height: 100vh;
-    background-size: cover;
+    background-position: right top, left top, left top;
+    background-size: 50vh, 50vh, cover;
+    background-repeat: no-repeat, no-repeat, no-repeat;
       }
 .rsvpform {opacity: 1;
           }
