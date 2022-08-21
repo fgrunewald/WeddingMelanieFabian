@@ -17,7 +17,7 @@
   top: 0px;
   border: 2px rgba(255,255,255,1.0);
   border-style: hidden hidden solid hidden;
-  background: rgba(251, 215, 161, 1.00);
+  background-image: url("/images/bg.jpg");
   background-size: cover;
   margin: 0;
 }
@@ -53,7 +53,7 @@
   height: 3px;
   width: 100%;
   content: "";
-  background-color: rgba(254, 213, 125, 1.00);
+  background-color: rgba(251, 215, 161, 1.0);
 }
 .menu-4 a:after {
   padding: 0.3em 0;
@@ -61,7 +61,7 @@
   bottom: 100%;
   left: 0;
   content: attr(data-hover);
-  color: rgba(255, 255, 255, 1.0);
+  color: rgba(251, 215, 161, 1.0);
   white-space: nowrap;
 }
 .menu-4 li:hover a,
@@ -152,13 +152,15 @@
   }}
 
 #details {
-  /*  background-color: rgba(251, 215, 161, 1.00); */
+  /*  background-color: rgba(251, 215, 161, 1.00);*/
     height: 100vh;
-    background-image: url(/images/bg.jpg);
-    background-size: cover;
+    background-image: url(/images/flowers_2.png), url(/images/bg.jpg);
+    background-position: left bottom, left top;
+    background-size: 45vh, cover;
     text-align:center;
     font-family: 'Oswald', sans-serif;
     font-size: 18px;
+    background-repeat: no-repeat, no-repeat;
       }
 .subtitle {
   display: flex;
@@ -227,13 +229,12 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     -webkit-background-size: cover;
-    padding-right: 60px;
+    padding-right: 0px;
     }
 .text-box {
-           background-color: rgba(251, 215, 161, 0.9);
-           background-image: url('/images/bg.jpg');
-           background-size: cover;
-           width: 33%;
+           background-image: url('/images/textbox.png');
+           background-size: contain;
+           width: 50%;
            float: right;
            height: 100%;
           }
@@ -242,7 +243,7 @@
         font-weight: 700;
         color: rgba(251, 215, 161, 1.0);
         display: block;
-        margin-top: 15%;
+        margin-top: 25%;
  }
 .content {
     font-family: 'Avenir Next', sans-serif;
@@ -250,6 +251,8 @@
     font-weight: 50;
     color: rgba(150, 150, 150, 1);
     display: block;
+    padding-left: 20%;
+    padding-right: 25%;
 }
 /*
 .locimg { display: block;
