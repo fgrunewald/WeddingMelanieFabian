@@ -88,6 +88,7 @@
   -webkit-animation-duration: 12s;
   -webkit-animation-timing-function: cubic-bezier(.37,.37,.94,.94);
   -webkit-animation-iteration-count: infinite;
+  -webkit-backface-visibility:none; 
 }
 
 @-webkit-keyframes background {
