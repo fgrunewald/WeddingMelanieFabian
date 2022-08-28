@@ -153,7 +153,7 @@
 #details {
   /*  background-color: rgba(251, 215, 161, 1.00);*/
     height: 100vh;
-    background-image: url(/images/flowers_2.png), url(/images/bg.jpg);
+    background-image: url(https://fgrunewald.github.io/WeddingMelanieFabian/images/flowers_2.png), url(https://fgrunewald.github.io/WeddingMelanieFabian/images/bg.jpg);
     background-position: left bottom, left top;
     background-size: 45vh, cover;
     text-align:center;
@@ -222,7 +222,7 @@
 
 #where {
     height: 100vh;
-    background-image: url('/images/torre_san_marco.jpg');
+    background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/torre_san_marco.jpg');
     background-color: rgba(251, 215, 161, 0.9);
     background-size: cover;
     -moz-background-size: cover;
@@ -231,7 +231,7 @@
     padding-right: 0px;
     }
 .text-box {
-           background-image: url('/images/textbox.png');
+           background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/textbox.png');
            background-size: contain;
            width: 50%;
            float: right;
@@ -263,13 +263,13 @@
         }
 */
 #program {
-    background-image: url("/images/bg.jpg");
+    background-image: url("https://fgrunewald.github.io/WeddingMelanieFabian/images/bg.jpg");
     height: 100vh;
     background-size: cover;
       }
 
 #rsvp {
-    background-image:url("/images/Flowers_right.png"), url("/images/Flowers_left.png"), url("/images/bg.jpg");
+    background-image:url("https://fgrunewald.github.io/WeddingMelanieFabian/images/Flowers_right.png"), url("https://fgrunewald.github.io/WeddingMelanieFabian/images/Flowers_left.png"), url("https://fgrunewald.github.io/WeddingMelanieFabian/images/bg.jpg");
     height: 100vh;
     background-position: right top, left top, left top;
     background-size: 50vh, 50vh, cover;
