@@ -1,6 +1,13 @@
 --
 --
 
+@font-face {
+    font-family: 'Romantically Free For Personal';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Romantically Free For Personal'), url('https://fonts.cdnfonts.com/s/77895/Romantically.woff') format('woff');
+}
+
 #navbar {
   position: fixed;
   width: 100%;
