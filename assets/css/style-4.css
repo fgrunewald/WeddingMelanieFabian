@@ -83,31 +83,31 @@
 
 @-webkit-keyframes background {
   0% {
-    background-image: url('{{ site.baseurl }}/images/castle.jpg');
+    background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/castle.jpg');
   }
   15% {
-    background-image: url('{{ site.baseurl }}/images/castle.jpg');
+    background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/castle.jpg');
   }
   20% {
-    background-image: url('{{ site.baseurl }}/images/boat.jpg');
+    background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/boat.jpg');
   }
   40% {
-    background-image: url('/images/boat.jpg');
+    background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/boat.jpg');
   }
   45% {
-    background-image: url('/images/sunset.jpg');
+    background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/sunset.jpg');
   }
   65% {
-    background-image: url('/images/sunset.jpg');
+    background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/sunset.jpg');
   }
   70% {
-    background-image: url('/images/selfie.jpg');
+    background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/selfie.jpg');
   }
   95% {
-    background-image: url('/images/selfie.jpg');
+    background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/selfie.jpg');
   }
   100% {
-    background-image: url('/images/castle.jpg');
+    background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/castle.jpg');
   }
 }
 .anitext::before {
