@@ -1,13 +1,6 @@
 --
 --
 
-@font-face {
-    font-family: 'Romantically Free For Personal';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Romantically Free For Personal'), url('https://fgrunewald.github.io/WeddingMelanieFabian/fonts/Romantically.woff') format('woff');
-}
-
 #navbar {
   position: fixed;
   width: 100%;
@@ -73,6 +66,15 @@
 .menu-4 .current a {
   transform: translateY(100%);
 }
+
+
+@font-face {
+    font-family: 'Romantically Free For Personal';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Romantically Free For Personal'), url('https://fgrunewald.github.io/WeddingMelanieFabian/fonts/Romantically.woff') format('woff');
+}
+
 
 #home {
   height: 100%;
