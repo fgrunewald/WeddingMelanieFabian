@@ -83,13 +83,13 @@
 
 @-webkit-keyframes background {
   0% {
-    background-image: url('/images/castle.jpg');
+    background-image: url('{{ site.baseurl }}/images/castle.jpg');
   }
   15% {
-    background-image: url('/images/castle.jpg');
+    background-image: url('{{ site.baseurl }}/images/castle.jpg');
   }
   20% {
-    background-image: url('/images/boat.jpg');
+    background-image: url('{{ site.baseurl }}/images/boat.jpg');
   }
   40% {
     background-image: url('/images/boat.jpg');
