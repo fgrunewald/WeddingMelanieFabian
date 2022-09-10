@@ -69,6 +69,7 @@
   transform: translateY(100%);
 }
 
+
 @font-face {
     font-family: 'Romantically Free For Personal';
     font-style: normal;
@@ -140,22 +141,22 @@
         content: "Melanie & Fabian"
   }
   20% {
-        content: "We fell in love"
+        content: "Wir haben uns verliebt"
   }
   40% {
-        content: "We fell in love"
+        content: "Wir haben uns verliebt"
   }
   45% {
-        content: "She said yes"
+        content: "Sie hat Ja gesagt"
   }
   65% {
-        content: "She said yes"
+        content: "Sie hat Ja gesagt"
   }
   70% {
-        content: "We're getting married"
+        content: "Wir heiraten"
   }
   95% {
-        content: "We're getting married"
+        content: "Wir heiraten"
   }
   100% {
         content: "Melanie & Fabian"
