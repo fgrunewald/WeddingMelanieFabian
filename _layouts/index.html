@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style-4.css">
+  <link rel="stylesheet" href="/assets/css/style-4.css">
   <link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
   <link href="https://fonts.cdnfonts.com/css/romantically-free-for-personal" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
@@ -193,6 +193,34 @@ $(document).ready(function(){
    });
 });
 </script>
+
+<script type="text/javascript" language="javascript">
+$(document).ready(function(){
+try {
+var p = [
+             'https://fgrunewald.github.io/WeddingMelanieFabian/images/castle.jpg';
+             'https://fgrunewald.github.io/WeddingMelanieFabian/images/boat.jpg';
+             'https://fgrunewald.github.io/WeddingMelanieFabian/images/sunset.jpg';
+             'https://fgrunewald.github.io/WeddingMelanieFabian/images/selfie.jpg';
+             ];
+
+        var counter = 0;
+
+        setInterval(function(){
+            $('#home').css.('background-image', 'url(' + p[counter++] + ')');
+            console.log(counter++);
+
+            if(counter == 3){
+                counter = 0;
+            }
+        }, 30)
+    } catch(err) {
+        alert(err.message);
+    }
+}
+);
+</script>
+
 <!--
 <script>
 $(document).ready(function(){
