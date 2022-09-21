@@ -1,197 +1,210 @@
 <!DOCTYPE html>
-<html lang="de" >
+<html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/german.css">
-  <link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
-  <link href="https://fonts.cdnfonts.com/css/romantically-free-for-personal" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/add-to-calendar-button@1/assets/css/atcb.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,100,0,0" />
-  <style>
-	/* Common Styles - Can ignore*/
-    html { 
-      margin: 0;
-      padding: 0;
-	  height: 100vh;
-    }
-	body {
-	  text-align:center;
-	  font-family: 'Avenir Next', sans-serif;
-	  font-size: 18px;
-	  height: 100vh;
-      margin: 0;
-      padding: 0;
-	}
-	h1{
-	  color:#212121;
-	  font-weight:100;
-	}
-	</style>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/german.css">
+    <link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.cdnfonts.com/css/romantically-free-for-personal" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/add-to-calendar-button@1/assets/css/atcb.min.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,100,0,0"/>
+    <style>
+        /* Common Styles - Can ignore*/
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+
+        body {
+            text-align: center;
+            font-family: 'Avenir Next', sans-serif;
+            font-size: 18px;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #212121;
+            font-weight: 100;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
-<header, id=navbar>
+<header
+, id=navbar>
 <!-- Navigation Bar -->
-	<nav class="style-4", aria-label="main navigation">
-		<ul class="menu-4">
-		  <li><a href="#home" data-hover="Home">Home</a></li>
-		  <li><a href="#details" data-hover="Details">Details</a></li>
-		  <li><a href="#where" data-hover="Verantstaltungsort">Verantstaltungsort</a></li>
-		  <li><a href="#program" data-hover="Programm">Programm</a></li>
-		  <li><a href="#rsvp" data-hover="RSVP">RSVP</a></li>
-		  <li><a href="{{ site.baseurl }}/index" data-hover="ENG">DEU</a></li>
-		</ul>
-	</nav>
+<nav class="style-4" , aria-label="main navigation">
+    <ul class="menu-4">
+        <li><a href="#home" data-hover="Home">Home</a></li>
+        <li><a href="#details" data-hover="Details">Details</a></li>
+        <li><a href="#where" data-hover="Verantstaltungsort">Verantstaltungsort</a></li>
+        <li><a href="#program" data-hover="Programm">Programm</a></li>
+        <li><a href="#rsvp" data-hover="RSVP">RSVP</a></li>
+        <li><a href="{{ site.baseurl }}/index" data-hover="ENG">DEU</a></li>
+    </ul>
+</nav>
 <!-- Navigation Bar End -->
 </header>
 
 <!-- Section with changeing background image -->
 <section id="home">
-<span class=anitext> </span>
+    <span class=anitext> </span>
 </section>
 
 <section id="details">
-<div class="subtitle space-around">
-<div>
-<span class="dummy"> &nbsp</span>
-<span class="dummy"> &nbsp</span>
-<span class="dummy"> &nbsp</span>
-<span class="dummy"> &nbsp</span>
-<i class="material-icons-outlined" style="font-size:50px;color:rgba(251, 215, 161, 1.0);">groups</i>
-<span class="caption">Wer</span>
-<span class="dummy">&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</span>
-<div class="line"></div>
-<span class="info-1">Freunde & Familie</span>
-<span class="info-2">von nah und fern</span>
-</div>
-<div>
-<span class="dummy"> &nbsp</span>
-<span class="dummy"> &nbsp</span>
-<span class="dummy"> &nbsp</span>
-<span class="dummy"> &nbsp</span>
-<i class="material-icons-outlined" style="font-size:50px;color:rgba(251, 215, 161, 1.0);">watch</i>
-<span class="caption">Wann</span>
-<span class="dummy">&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</span>
-<div class="line"></div>
-<span class="info-1">1. Juni</span>
-<span class="info-2">2022</span>
-<span class="info-2">&nbsp</span>
-<div class="atcb" style="display:block;margin-top: 67px; background: transparent">
-{
-  "inline":true,
-  "label": "KALENDER",
-  "background": false,
-  "name":"Wedding Melane and Fabian",
-  "description":"Check out the maybe easiest way to include add-to-calendar-buttons to your website at:<br>→ [url]https://github.com/add2cal/add-to-calendar-button[/url]",
-  "startDate":"2023-05-31",
-  "endDate":"2023-06-02",
-  "startTime":"16:00",
-  "endTime":"12:00",
-  "location":"Gardone Riviera",
-  "options":[
-    "Apple",
-    "Google",
-    "iCal",
-    "Microsoft365",
-    "MicrosoftTeams",
-    "Outlook.com"
-  ],
-  "timeZone":"Europe/Berlin",
-  "iCalFileName":"Reminder-Event"
-}
-</div>
-</div>
-<div>
-<span class="dummy"> &nbsp</span>
-<span class="dummy"> &nbsp</span>
-<span class="dummy"> &nbsp</span>
-<span class="dummy"> &nbsp</span>
-<i class="material-icons-outlined" style="font-size:50px;color:rgba(251, 215, 161, 1.0);">castle</i>
-<span class="caption">Wo</span>
-<span class="dummy">&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</span>
-<div class="line"></div>
-<span class="info-1">Torre San Marco</span>
-<span class="info-2">Gardone Riviera</span>
-<span class="info-2">Lago di Garda Italien</span>
-<div class="atcb-button-wrapper">
-<div class="atcb-button" style="display:block; margin-top: 67px;">
-<span class="link-1" style="display: inline"> &nbsp &nbsp &nbsp&nbsp </span>
-<span class="material-symbols-outlined" style="vertical-align:middle; font-size:25px;color:black; display: inline;">map</span>
-<a class="link-1" href="https://www.google.nl/maps/place/La+Torre+di+San+Marco/@45.620696,10.5654335,17z/data=!3m1!4b1!4m5!3m4!1s0x47818c210975bb83:0xd45ebe89228a2cb8!8m2!3d45.620696!4d10.5676222">KARTE &nbsp &nbsp &nbsp &nbsp&nbsp</a> 
-</div>
-</div>
-</div>
-</div>
+    <div class="subtitle space-around">
+        <div>
+            <span class="dummy"> &nbsp</span>
+            <span class="dummy"> &nbsp</span>
+            <span class="dummy"> &nbsp</span>
+            <span class="dummy"> &nbsp</span>
+            <i class="material-icons-outlined" style="font-size:50px;color:rgba(251, 215, 161, 1.0);">groups</i>
+            <span class="caption">Wer</span>
+            <span class="dummy">&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</span>
+            <div class="line"></div>
+            <span class="info-1">Freunde & Familie</span>
+            <span class="info-2">von nah und fern</span>
+        </div>
+        <div>
+            <span class="dummy"> &nbsp</span>
+            <span class="dummy"> &nbsp</span>
+            <span class="dummy"> &nbsp</span>
+            <span class="dummy"> &nbsp</span>
+            <i class="material-icons-outlined" style="font-size:50px;color:rgba(251, 215, 161, 1.0);">watch</i>
+            <span class="caption">Wann</span>
+            <span class="dummy">&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</span>
+            <div class="line"></div>
+            <span class="info-1">1. Juni</span>
+            <span class="info-2">2022</span>
+            <span class="info-2">&nbsp</span>
+            <div class="atcb" style="display:block;margin-top: 67px; background: transparent">
+                {
+                "inline":true,
+                "label": "KALENDER",
+                "background": false,
+                "name":"Wedding Melane and Fabian",
+                "description":"Check out the maybe easiest way to include add-to-calendar-buttons to your website
+                at:<br>→ [url]https://github.com/add2cal/add-to-calendar-button[/url]",
+                "startDate":"2023-05-31",
+                "endDate":"2023-06-02",
+                "startTime":"16:00",
+                "endTime":"12:00",
+                "location":"Gardone Riviera",
+                "options":[
+                "Apple",
+                "Google",
+                "iCal",
+                "Microsoft365",
+                "MicrosoftTeams",
+                "Outlook.com"
+                ],
+                "timeZone":"Europe/Berlin",
+                "iCalFileName":"Reminder-Event"
+                }
+            </div>
+        </div>
+        <div>
+            <span class="dummy"> &nbsp</span>
+            <span class="dummy"> &nbsp</span>
+            <span class="dummy"> &nbsp</span>
+            <span class="dummy"> &nbsp</span>
+            <i class="material-icons-outlined" style="font-size:50px;color:rgba(251, 215, 161, 1.0);">castle</i>
+            <span class="caption">Wo</span>
+            <span class="dummy">&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</span>
+            <div class="line"></div>
+            <span class="info-1">Torre San Marco</span>
+            <span class="info-2">Gardone Riviera</span>
+            <span class="info-2">Lago di Garda Italien</span>
+            <div class="atcb-button-wrapper">
+                <div class="atcb-button" style="display:block; margin-top: 67px;">
+                    <span class="link-1" style="display: inline"> &nbsp &nbsp &nbsp&nbsp </span>
+                    <span class="material-symbols-outlined"
+                          style="vertical-align:middle; font-size:25px;color:black; display: inline;">map</span>
+                    <a class="link-1"
+                       href="https://www.google.nl/maps/place/La+Torre+di+San+Marco/@45.620696,10.5654335,17z/data=!3m1!4b1!4m5!3m4!1s0x47818c210975bb83:0xd45ebe89228a2cb8!8m2!3d45.620696!4d10.5676222">KARTE
+                        &nbsp &nbsp &nbsp &nbsp&nbsp</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section id="where">
-<div class="text-box">
-<span class="title">The Location</span>
-<span class="content">Der am Westufer des Gardasees gelegene  <a href="https://www.torresanmarco.it/lagodigarda/event-location.html">Torre San Marco</a> wurde im frühen 20. Jahrhundert vom Besitzer der nahe gelegenen Villa Alba, dem deutschen Industriellen Richard Langensiepen, erbaut. Gabriele D'Annunzio erwarb den Turm im Jahre 1925 und ließ den ursprünglichen im neugotischen Stil erbauten Turm in den venezianischen Stil umbauen. In den Jahren 1943-44 war er auch der geheime Treffpunkt von Benito Mussolini und seiner Geliebten Claretta Petacci. Heute zeichnet sich der Turm durch eine große Pianobar im Erdgeschoss, ein Restaurant und eine Weinkellerei im ersten Stock und einen bezaubernden Garten mit Blick auf den See aus.</span>
-</div>
+    <div class="text-box">
+        <span class="title">The Location</span>
+        <span class="content">Der am Westufer des Gardasees gelegene  <a
+                href="https://www.torresanmarco.it/lagodigarda/event-location.html">Torre San Marco</a> wurde im frühen 20. Jahrhundert vom Besitzer der nahe gelegenen Villa Alba, dem deutschen Industriellen Richard Langensiepen, erbaut. Gabriele D'Annunzio erwarb den Turm im Jahre 1925 und ließ den ursprünglichen im neugotischen Stil erbauten Turm in den venezianischen Stil umbauen. In den Jahren 1943-44 war er auch der geheime Treffpunkt von Benito Mussolini und seiner Geliebten Claretta Petacci. Heute zeichnet sich der Turm durch eine große Pianobar im Erdgeschoss, ein Restaurant und eine Weinkellerei im ersten Stock und einen bezaubernden Garten mit Blick auf den See aus.</span>
+    </div>
 </section>
 
 <section id="program">
-<div class="subtitle space-around">
-<div>
-<span class="dummy"> &nbsp</span>
-<span class="dummy"> &nbsp</span>
-<span class="dummy"> &nbsp</span>
-<span class="dummy"> &nbsp</span>
-<span class="caption">31. Mai</span>
-<span class="dummy">&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</span>
-<div class="line"></div>
-<span class="info-1">18.00 Begrüßung der Gäste</span>
-</div>
-<div>
-<span class="dummy"> &nbsp</span>
-<span class="dummy"> &nbsp</span>
-<span class="dummy"> &nbsp</span>
-<span class="dummy"> &nbsp</span>
-<span class="caption">1. Juni</span>
-<span class="dummy">&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</span>
-<div class="line"></div>
-<span class="info-1">15.30 Ankunft am Torre San Marco</span>
-<span class="info-1">16.00 Zeremonie</span>
-<span class="info-1">17.00 Abendessen & Musik</span>
-</div>
-<div>
-<span class="dummy"> &nbsp</span>
-<span class="dummy"> &nbsp</span>
-<span class="dummy"> &nbsp</span>
-<span class="dummy"> &nbsp</span>
-<span class="caption">2. Juni</span>
-<span class="dummy">&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</span>
-<div class="line"></div>
-<span class="info-1">11.00 Verabschiedung der Gäste</span>
-</div>
-</div>
+    <div class="subtitle space-around">
+        <div>
+            <span class="dummy"> &nbsp</span>
+            <span class="dummy"> &nbsp</span>
+            <span class="dummy"> &nbsp</span>
+            <span class="dummy"> &nbsp</span>
+            <span class="caption">31. Mai</span>
+            <span class="dummy">&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</span>
+            <div class="line"></div>
+            <span class="info-1">18.00 Begrüßung der Gäste</span>
+        </div>
+        <div>
+            <span class="dummy"> &nbsp</span>
+            <span class="dummy"> &nbsp</span>
+            <span class="dummy"> &nbsp</span>
+            <span class="dummy"> &nbsp</span>
+            <span class="caption">1. Juni</span>
+            <span class="dummy">&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</span>
+            <div class="line"></div>
+            <span class="info-1">15.30 Ankunft am Torre San Marco</span>
+            <span class="info-1">16.00 Zeremonie</span>
+            <span class="info-1">17.00 Abendessen & Musik</span>
+        </div>
+        <div>
+            <span class="dummy"> &nbsp</span>
+            <span class="dummy"> &nbsp</span>
+            <span class="dummy"> &nbsp</span>
+            <span class="dummy"> &nbsp</span>
+            <span class="caption">2. Juni</span>
+            <span class="dummy">&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</span>
+            <div class="line"></div>
+            <span class="info-1">11.00 Verabschiedung der Gäste</span>
+        </div>
+    </div>
 </section>
 
 <section id="rsvp">
-<span class="dummy"> &nbsp</span>
-<span class="dummy"> &nbsp</span>
-<iframe class="rsvpform" src="https://docs.google.com/forms/d/e/1FAIpQLSdOEEITPJ45mPUApVyRZTDJ1dvpbO9MRaZgtBbauKn8Dt27Ew/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <span class="dummy"> &nbsp</span>
+    <span class="dummy"> &nbsp</span>
+    <iframe class="rsvpform"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSdOEEITPJ45mPUApVyRZTDJ1dvpbO9MRaZgtBbauKn8Dt27Ew/viewform?embedded=true"
+            width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…
+    </iframe>
 </section>
 
 <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@1" async defer></script>
-<script type="text/javascript" language="javascript"> $('.rsvpform').css('height', $(window).height()+'px');</script>
+<script type="text/javascript" language="javascript"> $('.rsvpform').css('height', $(window).height() + 'px');</script>
 <script type="text/javascript" language="javascript">
-$(document).ready(function(){
-   var scroll_start = 0;
-   var startchange = $('#details');
-   var offset = startchange.offset();
-   $(document).scroll(function() {
-      scroll_start = $(this).scrollTop();
-      if(scroll_start < offset.top) {
-          $('.menu-4').css('background-color', 'transparent');
-          $('.menu-4').css('background-image', '');
-       } else {
-          $('.menu-4').css('background-image', 'url({{ site.baseurl }}/images/bg.jpg)');
-       }
-   });
-});
+    $(document).ready(function () {
+        var scroll_start = 0;
+        var startchange = $('#details');
+        var offset = startchange.offset();
+        $(document).scroll(function () {
+            scroll_start = $(this).scrollTop();
+            if (scroll_start < offset.top) {
+                $('.menu-4').css('background-color', 'transparent');
+                $('.menu-4').css('background-image', '');
+            } else {
+                $('.menu-4').css('background-image', 'url({{ site.baseurl }}/images/bg.jpg)');
+            }
+        });
+    });
 </script>
 <!--
 <script>
