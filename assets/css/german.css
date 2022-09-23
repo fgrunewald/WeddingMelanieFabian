@@ -1,72 +1,79 @@
 --
 --
-
 #navbar {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index:10000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10000;
 }
+
 .menu-4 {
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 2.5vh;
-  position: fixed; /* Set the navbar to fixed position */
-  width: 100%; /* Full width */
-  top: 0px;
-  border: 2px rgba(255,255,255,1.0);
-  border-style: hidden hidden solid hidden;
-  background-size: cover;
-  margin: 0;
-  z-index:10000;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 2.5vh;
+    position: fixed; /* Set the navbar to fixed position */
+    width: 100%; /* Full width */
+    top: 0px;
+    border: 2px rgba(255, 255, 255, 1.0);
+    border-style: hidden hidden solid hidden;
+    background-size: cover;
+    margin: 0;
+    z-index: 10000;
 }
+
 .menu-4 * {
-  box-sizing: border-box;
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
 }
+
 .menu-4 li {
-  display: inline-block;
-  list-style: outside none none;
-  margin: 0 1.5em;
-  overflow: hidden;
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0 1.5em;
+    overflow: hidden;
 }
+
 .menu-4 a {
-  padding: 0.3em 0;
-  color: rgba(155,150,150,0.8);
-  position: relative;
-  display: inline-block;
-  letter-spacing: 1px;
-  margin: 0;
-  text-decoration: none;
+    padding: 0.3em 0;
+    color: rgba(155, 150, 150, 0.8);
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1px;
+    margin: 0;
+    text-decoration: none;
 }
+
 .menu-4 a:before,
 .menu-4 a:after {
-  position: absolute;
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
+    position: absolute;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
 }
+
 .menu-4 a:before {
-  bottom: 100%;
-  display: block;
-  height: 3px;
-  width: 100%;
-  content: "";
+    bottom: 100%;
+    display: block;
+    height: 3px;
+    width: 100%;
+    content: "";
 }
+
 .menu-4 a:after {
-  padding: 0.3em 0;
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  content: attr(data-hover);
-  color: rgba(251, 215, 161, 1.0);
-  white-space: nowrap;
+    padding: 0.3em 0;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    content: attr(data-hover);
+    color: rgba(251, 215, 161, 1.0);
+    white-space: nowrap;
 }
+
 .menu-4 li:hover a,
 .menu-4 .current a {
-  transform: translateY(100%);
+    transform: translateY(100%);
 }
 
 
@@ -79,120 +86,130 @@
 
 
 #home {
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
-  -webkit-animation-name: background;
-  -webkit-animation-duration: 12s;
-  -webkit-animation-timing-function: cubic-bezier(.37,.37,.94,.94);
-  -webkit-animation-iteration-count: infinite;
-  -webkit-backface-visibility:none; 
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    -webkit-animation-name: background;
+    -webkit-animation-duration: 12s;
+    -webkit-animation-timing-function: cubic-bezier(.37, .37, .94, .94);
+    -webkit-animation-iteration-count: infinite;
+    -webkit-backface-visibility: none;
 }
 
 @-webkit-keyframes background {
-  0% {
-    background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/castle.jpg');
-  }
-  15% {
-    background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/castle.jpg');
-  }
-  20% {
-    background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/boat.jpg');
-  }
-  40% {
-    background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/boat.jpg');
-  }
-  45% {
-    background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/sunset.jpg');
-  }
-  65% {
-    background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/sunset.jpg');
-  }
-  70% {
-    background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/selfie.jpg');
-  }
-  95% {
-    background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/selfie.jpg');
-  }
-  100% {
-    background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/castle.jpg');
-  }
-}
-.anitext::before {
-        font-family: 'Romantically Free For Personal', sans-serif;
-        content: "Fabian & Melanie";
-        animation: animate infinite 12s;
-        padding-left: 10px;
-        font-size: 50px;
-        font-weight:700;
-        position: relative;
-        top: 20%; left: 0%;
-        color: rgba(255, 255, 255, 1)
+    0% {
+        background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/castle.jpg');
     }
+    15% {
+        background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/castle.jpg');
+    }
+    20% {
+        background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/boat.jpg');
+    }
+    40% {
+        background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/boat.jpg');
+    }
+    45% {
+        background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/sunset.jpg');
+    }
+    65% {
+        background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/sunset.jpg');
+    }
+    70% {
+        background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/selfie.jpg');
+    }
+    95% {
+        background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/selfie.jpg');
+    }
+    100% {
+        background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/castle.jpg');
+    }
+}
+
+.anitext::before {
+    font-family: 'Romantically Free For Personal', sans-serif;
+    content: "Fabian & Melanie";
+    animation: animate infinite 12s;
+    padding-left: 10px;
+    font-size: 50px;
+    font-weight: 700;
+    position: relative;
+    top: 20%;
+    left: 0%;
+    color: rgba(255, 255, 255, 1)
+}
+
 @keyframes animate {
-  0% {
+    0% {
         content: "Melanie & Fabian"
-  }
-  15% {
+    }
+    15% {
         content: "Melanie & Fabian"
-  }
-  20% {
+    }
+    20% {
         content: "Wir haben uns verliebt"
-  }
-  40% {
+    }
+    40% {
         content: "Wir haben uns verliebt"
-  }
-  45% {
+    }
+    45% {
         content: "Sie hat Ja gesagt"
-  }
-  65% {
+    }
+    65% {
         content: "Sie hat Ja gesagt"
-  }
-  70% {
+    }
+    70% {
         content: "Wir heiraten"
-  }
-  95% {
+    }
+    95% {
         content: "Wir heiraten"
-  }
-  100% {
+    }
+    100% {
         content: "Melanie & Fabian"
-  }}
+    }
+}
 
 #details {
-  /*  background-color: rgba(251, 215, 161, 1.00);*/
+    /*  background-color: rgba(251, 215, 161, 1.00);*/
     height: 100vh;
     background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/flowers_2.png'), url('https://fgrunewald.github.io/WeddingMelanieFabian/images/bg.jpg');
     background-position: left bottom, left top;
     background-size: 45vh, cover;
-    text-align:center;
+    text-align: center;
     font-family: 'Oswald', sans-serif;
     font-size: 18px;
     background-repeat: no-repeat, no-repeat;
-      }
+}
+
 .subtitle {
-  display: flex;
-  padding: 20px;
+    display: flex;
+    padding: 20px;
 }
+
 .subtitle.space-around {
-  justify-content: space-around;
+    justify-content: space-around;
 }
+
 .subtitle.space-between {
-  justify-content: space-between;
+    justify-content: space-between;
 }
+
 .item {
     vertical-align: top;
     display: inline-block;
     text-align: center;
     width: 20px;
 }
+
 .i {
     width: 30px;
     height: 20px;
 }
+
 .caption {
     font-family: 'Romantically Free For Personal', sans-serif;
     font-size: 40px;
@@ -200,16 +217,19 @@
     color: rgba(251, 215, 161, 1.0);
     display: block;
 }
+
 .dummy {
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
     display: block;
 }
+
 .line {
     border-bottom: 2px solid rgba(251, 215, 161, 1.0);
     margin-top: 0px;
     display: block;
-    }
+}
+
 .info-1 {
     font-family: 'Avenir Next Condensed', sans-serif;
     font-size: 28px;
@@ -218,6 +238,7 @@
     margin-top: 40px;
     display: block;
 }
+
 .info-2 {
     font-family: 'Avenir Next', sans-serif;
     font-size: 25px;
@@ -225,6 +246,7 @@
     color: rgba(150, 150, 150, 1);
     display: block;
 }
+
 .link-1 {
     color: black;
     font-size: 16px;
@@ -241,34 +263,39 @@
     -o-background-size: cover;
     -webkit-background-size: cover;
     padding-right: 0px;
-    }
+}
+
 .text-box {
-           background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/textbox.png');
-           background-size: cover;
-           width: 50%;
-           height: 100%;
-           position: relative;
-           top: 0%;
-           left: 50%;
-           margin-right: 10%;
-          }
-.title {font-family: 'Romantically Free For Personal', sans-serif;
-        font-size: 5vh;
-        font-weight: 700;
-        color: rgba(251, 215, 161, 1.0);
-        display: block;
-        padding-top: 20%;
- }
+    background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/textbox.png');
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    top: 0%;
+    left: 50%;
+    margin-right: 10%;
+}
+
+.title {
+    font-family: 'Romantically Free For Personal', sans-serif;
+    font-size: 5vh;
+    font-weight: 700;
+    color: rgba(251, 215, 161, 1.0);
+    display: block;
+    padding-top: 20%;
+}
+
 .content {
     font-family: 'Avenir Next', sans-serif;
     font-size: 2.3vh;
-    text-align:justify;
+    text-align: justify;
     font-weight: 50;
     color: rgba(150, 150, 150, 1);
     display: block;
     padding-left: 25%;
     padding-right: 25%;
 }
+
 /*
 .locimg { display: block;
           float:left;
@@ -282,14 +309,16 @@
     background-image: url("https://fgrunewald.github.io/WeddingMelanieFabian/images/bg.jpg");
     height: 100vh;
     background-size: cover;
-      }
+}
 
 #rsvp {
-    background-image:url("https://fgrunewald.github.io/WeddingMelanieFabian/images/Flowers_right.png"), url("https://fgrunewald.github.io/WeddingMelanieFabian/images/Flowers_left.png"), url("https://fgrunewald.github.io/WeddingMelanieFabian/images/bg.jpg");
+    background-image: url("https://fgrunewald.github.io/WeddingMelanieFabian/images/Flowers_right.png"), url("https://fgrunewald.github.io/WeddingMelanieFabian/images/Flowers_left.png"), url("https://fgrunewald.github.io/WeddingMelanieFabian/images/bg.jpg");
     height: 100vh;
     background-position: right top, left top, left top;
     background-size: 50vh, 50vh, cover;
     background-repeat: no-repeat, no-repeat, no-repeat;
-      }
-.rsvpform {opacity: 1;
-          }
+}
+
+.rsvpform {
+    opacity: 1;
+}
