@@ -190,12 +190,11 @@
 <script type="text/javascript"> $('.rsvpform').css('height', $(window).height() + 'px');</script>
 <script type="text/javascript">
     $(document).ready(function () {
-        var scroll_start = 0;
-        var startchange = $('#details');
-        var offset = startchange.offset();
+        const offset = $('#details').offset();
+        let scrollStart = 0;
         $(document).scroll(function () {
-            scroll_start = $(this).scrollTop();
-            if (scroll_start < offset.top) {
+            scrollStart = $(this).scrollTop();
+            if (scrollStart < offset.top) {
                 $('.menu-4').css('background-color', 'transparent');
                 $('.menu-4').css('background-image', '');
             } else {
@@ -204,6 +203,24 @@
         });
     });
 </script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+            const p = [
+                'https://fgrunewald.github.io/WeddingMelanieFabian/images/castle.jpg',
+                'https://fgrunewald.github.io/WeddingMelanieFabian/images/boat.jpg',
+                'https://fgrunewald.github.io/WeddingMelanieFabian/images/sunset.jpg',
+                'https://fgrunewald.github.io/WeddingMelanieFabian/images/selfie.jpg',
+            ];
+            let counter = 0;
+            setInterval(function () {
+                $('#home').css('background-image', `url('${p[counter++]}')`);
+                counter = counter > 3 ? 0 : counter++;
+            }, 3000)
+        }
+    );
+</script>
+
 <!--
 <script>
 $(document).ready(function(){
@@ -214,7 +231,7 @@ $(document).ready(function(){
    $(document).scroll(function() {
     scroll_start = $(this).scrollTop();
     var i = 0
-    for (var 
+    for (var
 
 });
 });
