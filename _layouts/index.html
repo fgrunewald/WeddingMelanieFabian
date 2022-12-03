@@ -51,7 +51,7 @@
 
 <!-- Section with changing background image -->
 <section id="home">
-    <span class=anitext> </span>
+    <span class=anitext id=anitext1> Melanie & Fabian </span>
 </section>
 
 <section id="details">
@@ -207,13 +207,19 @@
 <script type="text/javascript">
     $(document).ready(function () {
             const p = [
-                'https://fgrunewald.github.io/WeddingMelanieFabian/images/castle.jpg',
                 'https://fgrunewald.github.io/WeddingMelanieFabian/images/boat.jpg',
                 'https://fgrunewald.github.io/WeddingMelanieFabian/images/sunset.jpg',
                 'https://fgrunewald.github.io/WeddingMelanieFabian/images/selfie.jpg',
+                'https://fgrunewald.github.io/WeddingMelanieFabian/images/castle.jpg',
             ];
+
+            const anitexts = ['We fell in love',
+                              'She said yes',
+                              'We\'re getting married',
+                              'Melanie & Fabian'];
             let counter = 0;
             setInterval(function () {
+                document.getElementById("anitext1").textContent=anitexts[counter];
                 $('#home').css('background-image', `url('${p[counter++]}')`);
                 counter = counter > 3 ? 0 : counter++;
             }, 3000)

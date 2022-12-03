@@ -98,62 +98,15 @@
     -webkit-animation-duration: 12s;
     -webkit-animation-iteration-count: infinite;
 }
-
-/*
-.anitext::before {
+.anitext {
         font-family: 'Romantically Free For Personal', sans-serif;
-        content: "Fabian & Melanie";
-        animation: animate;
-        animation-duration: 12s;
-        animation-iteration-count: infinite;
-        -webkit-animation: animate;
-        -webkit-animation-duration: 12s;
-        -webkit-animation-iteration-count: 3;
-        padding-left: 10px;
         font-size: 50px;
         font-weight:700;
         position: relative;
         top: 20%; left: 0%;
         color: rgba(255, 255, 255, 1)
-    }
-@keyframes animate {
-  0% {
-        content: "Melanie & Fabian";
-        -webkit-content: "Melanie & Fabian"
-  }
-  15% {
-        content: "Melanie & Fabian";
-        -webkit-content: "Melanie & Fabian"
-  }
-  20% {
-        content: "We fell in love";
-        -webkit-content: "We fell in love"
-  }
-  40% {
-        content: "We fell in love";
-        -webkit-content: "We fell in love"
-  }
-  45% {
-        content: "She said yes";
-        -webkit-content: "She said yes"
-  }
-  65% {
-        content: "She said yes";
-        -webkit-content: "She said yes"
-  }
-  70% {
-        content: "We're getting married";
-        -webkit-content: "We're getting married"
-  }
-  95% {
-        content: "We're getting married";
-        -webkit-content: "We're getting married"
-  }
-  100% {
-        content: "Melanie & Fabian";
-        -webkit-content: "Melanie & Fabian"
-  }}
-*/
+}
+
 #details {
     /*  background-color: rgba(251, 215, 161, 1.00);*/
     height: 100vh;
