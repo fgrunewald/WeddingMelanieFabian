@@ -90,89 +90,23 @@
     width: 100%;
     background-size: cover;
     background-position: center;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -webkit-background-size: cover;
-    -webkit-animation-name: background;
+    background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/castle.jpg');
+    animation-name: slides;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-delay: -1s;
+    -webkit-animation-name: slides;
     -webkit-animation-duration: 12s;
-    -webkit-animation-timing-function: cubic-bezier(.37, .37, .94, .94);
     -webkit-animation-iteration-count: infinite;
-    -webkit-backface-visibility: none;
 }
-
-@-webkit-keyframes background {
-    0% {
-        background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/castle.jpg');
-    }
-    15% {
-        background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/castle.jpg');
-    }
-    20% {
-        background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/boat.jpg');
-    }
-    40% {
-        background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/boat.jpg');
-    }
-    45% {
-        background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/sunset.jpg');
-    }
-    65% {
-        background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/sunset.jpg');
-    }
-    70% {
-        background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/selfie.jpg');
-    }
-    95% {
-        background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/selfie.jpg');
-    }
-    100% {
-        background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/castle.jpg');
-    }
+.anitext {
+        font-family: 'Romantically Free For Personal', sans-serif;
+        font-size: 50px;
+        font-weight:700;
+        position: relative;
+        top: 20%; left: 0%;
+        color: rgba(255, 255, 255, 1)
 }
-
-.anitext::before {
-    font-family: 'Romantically Free For Personal', sans-serif;
-    content: "Fabian & Melanie";
-    animation: animate infinite 12s;
-    padding-left: 10px;
-    font-size: 50px;
-    font-weight: 700;
-    position: relative;
-    top: 20%;
-    left: 0%;
-    color: rgba(255, 255, 255, 1)
-}
-
-@keyframes animate {
-    0% {
-        content: "Melanie & Fabian"
-    }
-    15% {
-        content: "Melanie & Fabian"
-    }
-    20% {
-        content: "Wir haben uns verliebt"
-    }
-    40% {
-        content: "Wir haben uns verliebt"
-    }
-    45% {
-        content: "Sie hat Ja gesagt"
-    }
-    65% {
-        content: "Sie hat Ja gesagt"
-    }
-    70% {
-        content: "Wir heiraten"
-    }
-    95% {
-        content: "Wir heiraten"
-    }
-    100% {
-        content: "Melanie & Fabian"
-    }
-}
-
 #details {
     /*  background-color: rgba(251, 215, 161, 1.00);*/
     height: 100vh;
