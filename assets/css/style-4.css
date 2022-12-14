@@ -314,7 +314,6 @@
     left: 50%;
     margin-right: 10%;
 }
-
 .title {
     font-family: 'Romantically Free For Personal', sans-serif;
     font-size: 5vh;
@@ -323,7 +322,15 @@
     display: block;
     padding-top: 20%;
 }
-
+.mobile-hide {display: inline;
+    font-family: 'Avenir Next', sans-serif;
+    font-size: 2.3vh;
+    text-align: justify;
+    font-weight: 50;
+    color: rgba(150, 150, 150, 1);
+    display: block;
+    padding-left: 25%;
+    padding-right: 25%;}
 .content {
     font-family: 'Avenir Next', sans-serif;
     font-size: 2.3vh;
@@ -337,7 +344,7 @@
 
 @media (max-width: 1019px) {
 #where {
-    height: 100%;
+    height: 100vh;
     background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/torre_san_marco.jpg');
     background-color: rgba(251, 215, 161, 0.9);
     background-size: cover;
@@ -346,15 +353,24 @@
     -webkit-background-size: cover;
     padding-right: 0px;
 }
+.mobile-hide {display: none}
+.grid-where {
+  display: grid;
+  width: 100vw;
+  grid-template-columns: auto;
+  grid-template-rows: 10vh 14vh 14vh 14vh 14vh 18vh;
+  padding-top: 20vh;
+  padding-left: 0;
+  padding-right: 0;
+  column-gap: 0;
+  margin: 0;
+ /* row-gap: 20px*/
+}
 .text-box {
-    background-image: url('/images/textbox_mobile.png');
- /*   background-size: cover; */
-    width: 100%;
-    height: 30%;
-    position: relative;
-    top: 70%;
-    left: 0%;
-    margin-right: 0%;
+    background-image: url('/images/bg.jpg');
+    background-size: cover; /* <-- background size */
+    background-position: center; /* <-- background position */
+    grid-area:  5 / 1 / span 3 / 1;
 }
 .title {
     font-family: 'Romantically Free For Personal', sans-serif;
@@ -365,13 +381,13 @@
 }
 .content {
     font-family: 'Avenir Next', sans-serif;
-    font-size: 20px;
+    font-size: 1.8vh;
     text-align: justify;
-    font-weight: 50;
-    color: rgba(150, 150, 150, 1);
+    font-weight: 100;
+    color: rgba(50, 50, 50, 1);
     display: block;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 10%;
+    padding-right: 10%;
 }}
 
 
