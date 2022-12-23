@@ -105,7 +105,7 @@
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto auto auto auto auto;
-  padding-top: 17%;
+  padding-top: 12%;
   padding-left: 5%;
   padding-right: 5%;
   column-gap: 5%;
