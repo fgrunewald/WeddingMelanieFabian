@@ -8,11 +8,12 @@
     z-index: 10000;
 }
 
+@media (min-width: 1020px) {
 .menu-4 {
     text-align: center;
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 2.5vh;
+    font-size: 2.3vh;
     position: fixed; /* Set the navbar to fixed position */
     width: 100%; /* Full width */
     top: 0px;
@@ -21,7 +22,23 @@
     background-size: cover;
     margin: 0;
     z-index: 10000;
-}
+}}
+
+@media (max-width: 1019px) {
+.menu-4 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 2.0vh;
+    position: fixed; /* Set the navbar to fixed position */
+    width: 100%; /* Full width */
+    top: 0px;
+    border: 2px rgba(255, 255, 255, 1.0);
+    border-style: hidden hidden solid hidden;
+    background-size: cover;
+    margin: 0;
+    z-index: 10000;
+}}
 
 .menu-4 * {
     box-sizing: border-box;
@@ -83,6 +100,82 @@
     src: local('Romantically Free For Personal'), url('https://fgrunewald.github.io/WeddingMelanieFabian/fonts/Romantically.woff') format('woff');
 }
 
+@media (max-width: 1019px) {
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto auto auto;
+  padding-top: 12%;
+  padding-left: 5%;
+  padding-right: 5%;
+  column-gap: 5%;
+  row-gap: 20px}
+.grid-item-1 {
+  text-align: center;
+  grid-area:  1 / 1 / 2 / 2;
+  border-bottom: 2px solid rgba(251, 215, 161, 1.0);
+}
+.grid-item-2 {
+  text-align: center;
+  grid-area:  3 / 1 / 4 / 2;
+  border-bottom: 2px solid rgba(251, 215, 161, 1.0);
+}
+.grid-item-3 {
+  text-align: center;
+  grid-area:  5 / 1 / 6 / 2;
+  border-bottom: 2px solid rgba(251, 215, 161, 1.0);
+}
+.grid-item-content-1 {
+  text-align: center;
+  grid-area:  2 / 1 / 3 / 2;
+}
+.grid-item-content-2 {
+  text-align: center;
+  grid-area:  4 / 1 / 5 / 2;
+}
+.grid-item-content-3 {
+  text-align: center;
+  grid-area:  6 / 1 / 7 / 2;
+}}
+
+
+@media (min-width: 1020px) {
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  padding-top: 10%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  column-gap: 5%;}
+.grid-item-1 {
+  text-align: center;
+  grid-area:  1 / 1 / 2 / 2;
+  border-bottom: 2px solid rgba(251, 215, 161, 1.0);
+}
+.grid-item-2 {
+  text-align: center;
+  grid-area:  1 / 2 / 2 / 3;
+  border-bottom: 2px solid rgba(251, 215, 161, 1.0);
+}
+.grid-item-3 {
+  text-align: center;
+  grid-area:  1 / 3 / 2 / 4;
+  border-bottom: 2px solid rgba(251, 215, 161, 1.0);
+}
+.grid-item-content-1 {
+  text-align: center;
+  grid-area:  2 / 1 / 3 / 2;
+}
+.grid-item-content-2 {
+  text-align: center;
+  grid-area:  2 / 2 / 3 / 3;
+}
+.grid-item-content-3 {
+  text-align: center;
+  grid-area:  2 / 3 / 3 / 4;
+}}
+
 
 #home {
     height: 100%;
@@ -107,6 +200,7 @@
         color: rgba(255, 255, 255, 1)
 }
 
+@media (min-width: 1200px) {
 #details {
     /*  background-color: rgba(251, 215, 161, 1.00);*/
     height: 100vh;
@@ -117,8 +211,20 @@
     font-family: 'Oswald', sans-serif;
     font-size: 18px;
     background-repeat: no-repeat, no-repeat;
-}
+}}
 
+@media (max-width: 1201px) {
+#details {
+    /*  background-color: rgba(251, 215, 161, 1.00);*/
+    height: 100vh;
+    background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/flowers_2.png'), url('https://fgrunewald.github.io/WeddingMelanieFabian/images/bg.jpg');
+    background-position: left bottom, left top;
+    background-size: 30vh, cover;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    background-repeat: no-repeat, no-repeat;
+}}
 .subtitle {
     display: flex;
     padding: 20px;
@@ -164,6 +270,18 @@
     display: block;
 }
 
+@media (max-width: 1019px) {
+.info-1 {
+    font-family: 'Avenir Next Condensed', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    color: rgba(150, 150, 150, 1);
+    margin-top: 40px;
+    display: block;
+}}
+
+
+@media (min-width: 1020px) {
 .info-1 {
     font-family: 'Avenir Next Condensed', sans-serif;
     font-size: 28px;
@@ -171,7 +289,7 @@
     color: rgba(150, 150, 150, 1);
     margin-top: 40px;
     display: block;
-}
+}}
 
 .info-2 {
     font-family: 'Avenir Next', sans-serif;
@@ -188,6 +306,7 @@
     text-decoration: none;
 }
 
+@media (min-width: 1020px) {
 #where {
     height: 100vh;
     background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/torre_san_marco.jpg');
@@ -198,52 +317,118 @@
     -webkit-background-size: cover;
     padding-right: 0px;
 }
-
+.grid-where {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 40vw 60vw;
+  grid-template-rows: auto;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  column-gap: 0;
+  margin-left: 0;
+/* row-gap: 20px*/
+}
 .text-box {
     background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/textbox.png');
-    background-size: cover;
-    width: 50%;
-    height: 100%;
-    position: relative;
-    top: 0%;
-    left: 50%;
-    margin-right: 10%;
+    background-size: cover; /* <-- background size */
+    background-position: center; /* <-- background position */
+    grid-area:  1 / 2 / 1 / 3;
 }
-
 .title {
     font-family: 'Romantically Free For Personal', sans-serif;
-    font-size: 5vh;
+    font-size: 2.5vw;
     font-weight: 700;
     color: rgba(251, 215, 161, 1.0);
     display: block;
-    padding-top: 20%;
+    /* prev 12%*/
+    padding-left: 8vw;
 }
-
-.content {
+@media (min-width: 1420px) {.title {padding-top: 20vh}}
+/*@media (min-width: 1200px) and (max-width 1419px) {.title {padding-top: 25vh}}*/
+@media (min-width: 1012px) and (max-width: 1419px) {.title {padding-top: 25vh}}
+.mobile-hide {
+    color: rgba(50, 50, 50, 1);
     font-family: 'Avenir Next', sans-serif;
-    font-size: 2.3vh;
+    font-size: 1.2vw;
     text-align: justify;
     font-weight: 50;
-    color: rgba(150, 150, 150, 1);
-    display: block;
-    padding-left: 25%;
-    padding-right: 25%;
+    display: inline;
+    padding-left: 1.2vw;
+    padding-right: 1.2vw;
 }
+.content {
+    color: rgba(50, 50, 50, 1);
+    font-family: 'Avenir Next', sans-serif;
+    font-size: 1.2vw;
+    text-align: justify;
+    font-weight: 50;
+    display: block;
+    padding-left: 20vw;
+    padding-right: 15vw;
+}}
 
-/*
-.locimg { display: block;
-          float:left;
-          max-width: 100%;
-          max-height: 100%;
-          width: auto;
-          height: auto;
-        }
-*/
+@media (max-width: 1019px) {
+#where {
+    height: 100vh;
+    background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/torre_san_marco.jpg');
+    background-color: rgba(251, 215, 161, 0.9);
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    padding-right: 0px;
+}
+.mobile-hide {display: none}
+.grid-where {
+  display: grid;
+  width: 100vw;
+  grid-template-columns: auto;
+  grid-template-rows: 10vh 14vh 14vh 14vh 14vh 18vh;
+  padding-top: 25vh;
+  padding-left: 0;
+  padding-right: 0;
+  column-gap: 0;
+  margin: 0;
+ /* row-gap: 20px*/
+}
+.text-box {
+    background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/textbox_mobile.png');
+    background-size: auto; /* <-- background size */
+    background-position: center; /* <-- background position */
+    grid-area:  5 / 1 / span 3 / 1;
+}
+.title {
+    font-family: 'Romantically Free For Personal', sans-serif;
+    font-size: 2.5vh;
+    font-weight: 700;
+    color: rgba(251, 215, 161, 1.0);
+    display: block;
+}
+.content {
+    font-family: 'Avenir Next', sans-serif;
+    font-size: 1.8vh;
+    text-align: justify;
+    font-weight: 100;
+    color: rgba(50, 50, 50, 1);
+    display: block;
+    padding-left: 10%;
+    padding-right: 10%;
+}}
+
+
 #program {
     background-image: url("https://fgrunewald.github.io/WeddingMelanieFabian/images/bg.jpg");
     height: 100vh;
     background-size: cover;
 }
+
+#hotels {
+    background-image: url("https://fgrunewald.github.io/WeddingMelanieFabian/images/bg.jpg");
+    height: 100vh;
+    background-size: cover;
+    }
 
 #rsvp {
     background-image: url("https://fgrunewald.github.io/WeddingMelanieFabian/images/Flowers_right.png"), url("https://fgrunewald.github.io/WeddingMelanieFabian/images/Flowers_left.png"), url("https://fgrunewald.github.io/WeddingMelanieFabian/images/bg.jpg");
