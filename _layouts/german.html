@@ -51,7 +51,7 @@
 
 <!-- Section with changing background image -->
 <section id="home">
-    <span class=anitext> </span>
+    <span class=anitext id=anitext1> Melanie & Fabian </span>
 </section>
 
 <section id="details">
@@ -133,48 +133,30 @@
 </section>
 
 <section id="where">
+    <div class="grid-where">
     <div class="text-box">
         <span class="title">The Location</span>
         <span class="content">Der am Westufer des Gardasees gelegene  <a
-                href="https://www.torresanmarco.it/lagodigarda/event-location.html">Torre San Marco</a> wurde im frühen 20. Jahrhundert vom Besitzer der nahe gelegenen Villa Alba, dem deutschen Industriellen Richard Langensiepen, erbaut. Gabriele D'Annunzio erwarb den Turm im Jahre 1925 und ließ den ursprünglichen im neugotischen Stil erbauten Turm in den venezianischen Stil umbauen. In den Jahren 1943-44 war er auch der geheime Treffpunkt von Benito Mussolini und seiner Geliebten Claretta Petacci. Heute zeichnet sich der Turm durch eine große Pianobar im Erdgeschoss, ein Restaurant und eine Weinkellerei im ersten Stock und einen bezaubernden Garten mit Blick auf den See aus.</span>
+                href="https://www.torresanmarco.it/lagodigarda/event-location.html">Torre San Marco</a> wurde im frühen 20. Jahrhundert vom Besitzer der nahe gelegenen Villa Alba, dem deutschen Industriellen Richard Langensiepen, erbaut.
+        <span class=mobile-hide> Gabriele D'Annunzio erwarb den Turm im Jahre 1925 und ließ den ursprünglichen im neugotischen Stil erbauten Turm in den venezianischen Stil umbauen. In den Jahren 1943-44 war er auch der geheime Treffpunkt von Benito Mussolini und seiner Geliebten Claretta Petacci.</span>
+        <span class="conent"> Heute zeichnet sich der Turm durch eine große Pianobar im Erdgeschoss, ein Restaurant und eine Weinkellerei im ersten Stock und einen bezaubernden Garten mit Blick auf den See aus.</span>
+    </div>
     </div>
 </section>
 
 <section id="program">
-    <div class="subtitle space-around">
-        <div>
-            <span class="dummy"> &nbsp</span>
-            <span class="dummy"> &nbsp</span>
-            <span class="dummy"> &nbsp</span>
-            <span class="dummy"> &nbsp</span>
-            <span class="caption">31. Mai</span>
-            <span class="dummy">&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</span>
-            <div class="line"></div>
-            <span class="info-1">18.00 Begrüßung der Gäste</span>
-        </div>
-        <div>
-            <span class="dummy"> &nbsp</span>
-            <span class="dummy"> &nbsp</span>
-            <span class="dummy"> &nbsp</span>
-            <span class="dummy"> &nbsp</span>
-            <span class="caption">1. Juni</span>
-            <span class="dummy">&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</span>
-            <div class="line"></div>
+  <div class="grid-container">
+  <div class="grid-item-1"><span class="caption">31st of May</span></div>
+  <div class="grid-item-2"><span class="caption">1st of June</span></div>
+  <div class="grid-item-3"><span class="caption">2nd of June</span></div>
+  <div class="grid-item-content-1"><span class="info-1">18.00 Begrüßung der Gäste</span></div>
+  <div class="grid-item-content-2">
             <span class="info-1">15.30 Ankunft am Torre San Marco</span>
-            <span class="info-1">16.00 Zeremonie</span>
+            <span class="info-1">16.00 Zeremonie </span>
             <span class="info-1">17.00 Abendessen & Musik</span>
-        </div>
-        <div>
-            <span class="dummy"> &nbsp</span>
-            <span class="dummy"> &nbsp</span>
-            <span class="dummy"> &nbsp</span>
-            <span class="dummy"> &nbsp</span>
-            <span class="caption">2. Juni</span>
-            <span class="dummy">&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</span>
-            <div class="line"></div>
-            <span class="info-1">11.00 Verabschiedung der Gäste</span>
-        </div>
-    </div>
+  </div>
+  <div class="grid-item-content-3"><span class="info-1"> 11.00 Verabschiedung der Gäste </span></div>
+  </div>
 </section>
 
 <section id="rsvp">
@@ -207,13 +189,19 @@
 <script type="text/javascript">
     $(document).ready(function () {
             const p = [
-                'https://fgrunewald.github.io/WeddingMelanieFabian/images/castle.jpg',
                 'https://fgrunewald.github.io/WeddingMelanieFabian/images/boat.jpg',
                 'https://fgrunewald.github.io/WeddingMelanieFabian/images/sunset.jpg',
                 'https://fgrunewald.github.io/WeddingMelanieFabian/images/selfie.jpg',
+                'https://fgrunewald.github.io/WeddingMelanieFabian/images/castle.jpg',
             ];
+
+            const anitexts = ['Wir haben uns verliebt',
+                              'Sie hat Ja gesagt',
+                              'Wir heiraten',
+                              'Melanie & Fabian'];
             let counter = 0;
             setInterval(function () {
+                document.getElementById("anitext1").textContent=anitexts[counter];
                 $('#home').css('background-image', `url('${p[counter++]}')`);
                 counter = counter > 3 ? 0 : counter++;
             }, 3000)
@@ -255,7 +243,6 @@ for (var obj in myArray) {
       item[1].classList.remove('is-active');
       item[2].classList.add('is-active');
       item[3].classList.remove('is-active');
-    }
     if (scroll > 1130) {
       item[1].classList.remove('is-active');
       item[2].classList.remove('is-active');
