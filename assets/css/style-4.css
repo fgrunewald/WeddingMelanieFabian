@@ -331,7 +331,7 @@
 /* row-gap: 20px*/
 }
 .text-box {
-    background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/textbox.png');
+    background-image: url('https://fgrunewald.github.io/WeddingMelanieFabian/images/textbox2.png');
     background-size: cover; /* <-- background size */
     background-position: center; /* <-- background position */
     grid-area:  1 / 2 / 1 / 3;
