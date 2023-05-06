@@ -258,26 +258,46 @@
 
 
 <script type="text/javascript">
-    $(document).ready(function () {
-            const p = [
-                'https://fgrunewald.github.io/WeddingMelanieFabian/images/boat.jpg',
-                'https://fgrunewald.github.io/WeddingMelanieFabian/images/sunset.jpg',
-                'https://fgrunewald.github.io/WeddingMelanieFabian/images/selfie.jpg',
-                'https://fgrunewald.github.io/WeddingMelanieFabian/images/castle.jpg',
-            ];
+$(document).ready(function() {
+  /* Ipads have a strange pixel width so we check if we can identify them
+     otherwise they show up as mobile phone */
+  const IPA = /iPad|iPad4,1|iPad4,2|iPad5,1|iPad5,2|Macintosh/.test(navigator.userAgent);
+  let p = [];
 
-            const anitexts = ['Wir haben uns verliebt',
-                              'Sie hat Ja gesagt',
-                              'Wir heiraten',
-                              'Melanie & Fabian'];
-            let counter = 0;
-            setInterval(function () {
-                document.getElementById("anitext1").textContent=anitexts[counter];
-                $('#home').css('background-image', `url('${p[counter++]}')`);
-                counter = counter > 3 ? 0 : counter++;
-            }, 3000)
-        }
-    );
+  if ('ontouchstart' in window && IPA) {
+    p = [
+      "{{ site.baseurl }}/images/boat.jpg",
+      "{{ site.baseurl }}/images/sunset.jpg",
+      "{{ site.baseurl }}/images/selfie.jpg",
+      "{{ site.baseurl }}/images/castle.jpg",
+    ];
+  } else if ('ontouchstart' in window && screen.width < 1024) {
+    p = [
+      "{{ site.baseurl }}/images/boat-mobile.jpg",
+      "{{ site.baseurl }}/images/sunset-mobile.jpg",
+      "{{ site.baseurl }}/images/selfie-mobile.jpg",
+      "{{ site.baseurl }}/images/castle-mobile.jpg",
+    ];
+  } else {
+    p = [
+      "{{ site.baseurl }}/images/boat-mobile.jpg",
+      "{{ site.baseurl }}/images/sunset-mobile.jpg",
+      "{{ site.baseurl }}/images/selfie-mobile.jpg",
+      "{{ site.baseurl }}/images/castle-mobile.jpg",
+    ];
+  }
+
+  const anitexts = ['Wir haben uns verliebt',
+                    'Sie hat Ja gesagt',
+                    'Wir heiraten',
+                    'Melanie & Fabian'];
+  let counter = 0;
+  setInterval(function() {
+    document.getElementById("anitext1").textContent = anitexts[counter];
+    $('#home').css('background-image', `url('${p[counter++]}')`);
+    counter = counter > 3 ? 0 : counter++;
+  }, 3000);
+});
 </script>
 </body>
 </html>
