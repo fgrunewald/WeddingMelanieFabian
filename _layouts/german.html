@@ -145,17 +145,12 @@
 </section>
 
 <section id="program">
-  <div class="grid-container">
-  <div class="grid-item-1"><span class="caption">31st of May</span></div>
-  <div class="grid-item-2"><span class="caption">1st of June</span></div>
-  <div class="grid-item-3"><span class="caption">2nd of June</span></div>
-  <div class="grid-item-content-1"><span class="info-1">18.00 Begrüßung der Gäste</span></div>
-  <div class="grid-item-content-2">
-            <span class="info-1">15.30 Ankunft am Torre San Marco</span>
-            <span class="info-1">16.00 Zeremonie </span>
-            <span class="info-1">17.00 Abendessen & Musik</span>
+  <div id="program-grid">
+  <div id="program-grid-item"><span id="program-grid-heading">Programm</span></div>
+  <div id="program-grid-content">
+        <img src="/images/Programm_DEU.svg" alt="Desktop Image" id="program-desktop">
+        <img src="/images/Programm_DEU_mobile.svg" alt="Mobile Image" id="program-mobile">
   </div>
-  <div class="grid-item-content-3"><span class="info-1"> 11.00 Verabschiedung der Gäste </span></div>
   </div>
 </section>
 
@@ -186,6 +181,82 @@
     });
 </script>
 
+
+<!-- Here we detect if there is mobile deveice being used -->
+<script type="text/javascript">
+        function style_webpage() {
+             const IPO = /iPhone/.test(navigator.userAgent);
+             /* iPads apparently have Macintish in their user agent string */
+             const IPA = /iPad|iPad4,1|iPad4,2|iPad5,1|iPad5,2|Macintosh/.test(navigator.userAgent);
+             const AG = navigator.userAgent
+             /* figure out what the screen orientation is */
+             const IsPortrait = window.matchMedia("(orientation: portrait)").matches || window.orientation === 0 || window.orientation === 180;
+             /*document.getElementById("program-grid-heading").innerHTML = AG;*/
+
+             /* these are the elements we want to modify by assinging a class to them */
+             const ids = ["program-grid", "program-grid-item", "program-grid-heading",
+                          "program-grid-content", "program-desktop", "program-mobile"];
+             /* now we loop over everything and set the specifc classes */
+             for (let i = 0; i < ids.length; i++) {
+                 /* Case 1: we have an iphone */
+                 if ('ontouchstart' in window && IPO) {
+                     let class_item = ids[i] + "-IPO";
+                     document.getElementById(ids[i]).classList.add(class_item);
+                     console.log(ids[i], class_item);
+                     }
+                 /* Case 2: we have an ipad */
+                else if ('ontouchstart' in window && IPA) {
+                     let class_item = ids[i] + "-IPA";
+                     document.getElementById(ids[i]).classList.add(class_item);
+                     /* we need to add more pdding if in portrait mode */
+                     if (IsPortrait && class_item == "program-grid-IPA") {
+                        $('.program-grid-IPA').css('padding-top', '35%');
+                        $('.program-grid-IPA').css('column-gap', '10%');
+                     }
+                    }
+                 /* Case 3: we have mobile device that's neither ipad nor iphone
+                    it has a small screen so probably a mobile phone*/
+                else if ('ontouchstart' in window && screen.width < 1024) {
+                     let class_item = ids[i] + "-phone";
+                     document.getElementById(ids[i]).classList.add(class_item);
+                    }
+
+                 /* Case 4: we have mobile device that's neither ipad nor iphone
+                    and it has a large screen so probably a tablet*/
+                else if ('ontouchstart' in window && screen.width > 1024) {
+                     let class_item = ids[i] + "-tablet";
+                     document.getElementById(ids[i]).classList.add(class_item);
+                      /* we need to add more pdding if in portrait mode */
+                     if (IsPortrait && class_item == "program-grid-tablet") {
+                        $('.program-grid-tablet').css('padding-top', '35%');
+                        $('.program-grid-tablet').css('column-gap', '10%');
+                     }
+                   }
+
+                /* Case 5: Now this should be a desktop screen*/
+                else {
+                     let class_item = ids[i] + "-desktop";
+                     console.log('go here')
+                     document.getElementById(ids[i]).classList.add(class_item);
+                    }
+
+             }}
+    $(document).ready(function() {
+        // Call the function on page load
+        style_webpage();
+        // Call the function on orientation change
+        window.addEventListener("orientationchange", style_webpage);
+        // Call the function on orientation change
+        window.addEventListener("resize", style_webpage);
+        // Call the function on orientation change back
+        window.matchMedia("(orientation: portrait)").addListener(style_webpage);
+        // Call the function on orientation change back
+        window.matchMedia("(orientation: landscape)").addListener(style_webpage);
+    });
+
+</script>
+
+
 <script type="text/javascript">
     $(document).ready(function () {
             const p = [
@@ -208,48 +279,5 @@
         }
     );
 </script>
-
-<!--
-<script>
-$(document).ready(function(){
-   var scroll_start = 0;
-   var item_list = $(document).getElementsByClassName('menu-4');
-   var sections = $(document).getElementsByTagName('section');
-
-   $(document).scroll(function() {
-    scroll_start = $(this).scrollTop();
-    var i = 0
-    for (var
-
-});
-});
-
-var i = 0;
-for (var obj in myArray) {
-    alert(i)
-    i++
-}
-
-  window.addEventListener("scroll", function (event) {
-    var scroll = this.scrollY;
-    var item = document.getElementsByClassName('navbar-item');
-    /* console.log(scroll); */
-    if (scroll < 565) {
-      item[1].classList.add('is-active');
-      item[2].classList.remove('is-active');
-      item[3].classList.remove('is-active');
-    }
-    if (scroll > 565 && scroll < 1130) {
-      item[1].classList.remove('is-active');
-      item[2].classList.add('is-active');
-      item[3].classList.remove('is-active');
-    if (scroll > 1130) {
-      item[1].classList.remove('is-active');
-      item[2].classList.remove('is-active');
-      item[3].classList.add('is-active');
-    }
-  });
-</script>
--->
 </body>
 </html>
