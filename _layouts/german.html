@@ -266,10 +266,10 @@ $(document).ready(function() {
 
   if ('ontouchstart' in window && IPA) {
     p = [
-      "{{ site.baseurl }}/images/boat.jpg",
-      "{{ site.baseurl }}/images/sunset.jpg",
-      "{{ site.baseurl }}/images/selfie.jpg",
-      "{{ site.baseurl }}/images/castle.jpg",
+      "{{ site.baseurl }}/images/boat-mobile.jpg",
+      "{{ site.baseurl }}/images/sunset-mobile.jpg",
+      "{{ site.baseurl }}/images/selfie-mobile.jpg",
+      "{{ site.baseurl }}/images/castle-mobile.jpg",
     ];
   } else if ('ontouchstart' in window && screen.width < 1024) {
     p = [
@@ -280,10 +280,10 @@ $(document).ready(function() {
     ];
   } else {
     p = [
-      "{{ site.baseurl }}/images/boat-mobile.jpg",
-      "{{ site.baseurl }}/images/sunset-mobile.jpg",
-      "{{ site.baseurl }}/images/selfie-mobile.jpg",
-      "{{ site.baseurl }}/images/castle-mobile.jpg",
+      "{{ site.baseurl }}/images/boat.jpg",
+      "{{ site.baseurl }}/images/sunset.jpg",
+      "{{ site.baseurl }}/images/selfie.jpg",
+      "{{ site.baseurl }}/images/castle.jpg",
     ];
   }
 
