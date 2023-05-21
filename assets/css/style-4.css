@@ -100,81 +100,6 @@
     src: local('Romantically Free For Personal'), url('https://fgrunewald.github.io/WeddingMelanieFabian/fonts/Romantically.woff') format('woff');
 }
 
-@media (max-width: 1019px) {
-.grid-container {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto auto auto auto auto auto;
-  padding-top: 12%;
-  padding-left: 5%;
-  padding-right: 5%;
-  column-gap: 5%;
-  row-gap: 20px}
-.grid-item-1 {
-  text-align: center;
-  grid-area:  1 / 1 / 2 / 2;
-  border-bottom: 2px solid rgba(251, 215, 161, 1.0);
-}
-.grid-item-2 {
-  text-align: center;
-  grid-area:  3 / 1 / 4 / 2;
-  border-bottom: 2px solid rgba(251, 215, 161, 1.0);
-}
-.grid-item-3 {
-  text-align: center;
-  grid-area:  5 / 1 / 6 / 2;
-  border-bottom: 2px solid rgba(251, 215, 161, 1.0);
-}
-.grid-item-content-1 {
-  text-align: center;
-  grid-area:  2 / 1 / 3 / 2;
-}
-.grid-item-content-2 {
-  text-align: center;
-  grid-area:  4 / 1 / 5 / 2;
-}
-.grid-item-content-3 {
-  text-align: center;
-  grid-area:  6 / 1 / 7 / 2;
-}}
-
-
-@media (min-width: 1020px) {
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
-  padding-top: 10%;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
-  column-gap: 5%;}
-.grid-item-1 {
-  text-align: center;
-  grid-area:  1 / 1 / 2 / 2;
-  border-bottom: 2px solid rgba(251, 215, 161, 1.0);
-}
-.grid-item-2 {
-  text-align: center;
-  grid-area:  1 / 2 / 2 / 3;
-  border-bottom: 2px solid rgba(251, 215, 161, 1.0);
-}
-.grid-item-3 {
-  text-align: center;
-  grid-area:  1 / 3 / 2 / 4;
-  border-bottom: 2px solid rgba(251, 215, 161, 1.0);
-}
-.grid-item-content-1 {
-  text-align: center;
-  grid-area:  2 / 1 / 3 / 2;
-}
-.grid-item-content-2 {
-  text-align: center;
-  grid-area:  2 / 2 / 3 / 3;
-}
-.grid-item-content-3 {
-  text-align: center;
-  grid-area:  2 / 3 / 3 / 4;
-}}
 
 
 #home {
@@ -419,9 +344,11 @@
 
 
 #program {
-    background-image: url("https://fgrunewald.github.io/WeddingMelanieFabian/images/bg.jpg");
+    background-image: url("/images/Flowers_Programm.svg"), url("https://fgrunewald.github.io/WeddingMelanieFabian/images/bg.jpg");
     height: 100vh;
-    background-size: cover;
+    background-position: center bottom, left top;
+    background-size: 100vw, cover;
+    background-repeat: no-repeat, no-repeat;
 }
 
 #hotels {
@@ -440,4 +367,196 @@
 
 .rsvpform {
     opacity: 1;
+}
+
+.program-grid-IPO {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  padding-top: 30%;
+  padding-left: 5%;
+  padding-right: 5%;
+  column-gap: 5%;
+  row-gap: 2%;
+}
+.program-grid-IPA {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  padding-top: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  column-gap: 5%;
+  row-gap: 2%;
+}
+.program-grid-phone {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  padding-top: 30%;
+  padding-left: 5%;
+  padding-right: 5%;
+  column-gap: 5%;
+  row-gap: 2%;
+}
+.program-grid-tablet {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  padding-top: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  column-gap: 5%;
+  row-gap: 2%;
+}
+.program-grid-desktop {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  column-gap: 5%;
+  row-gap: 2%;
+}
+
+.program-grid-item-IPO {
+  text-align: center;
+  grid-area:  1 / 1 / 2 / 2;}
+.program-grid-item-IPA {
+  text-align: center;
+  grid-area:  1 / 2 / 2 / 3;}
+.program-grid-item-phone {
+  text-align: center;
+  grid-area:  1 / 1 / 2 / 2;}
+.program-grid-item-tablet {
+  text-align: center;
+  grid-area:  1 / 2 / 2 / 3;}
+.program-grid-item-desktop {
+  text-align: center;
+  grid-area:  1 / 2 / 2 / 3;}
+
+.program-grid-content-IPO {
+  text-align: center;
+  grid-area:  2 / 1 / 3 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.program-grid-content-IPA {
+  text-align: center;
+  grid-area:  2 / 1 / 3 / span 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.program-grid-content-phone {
+  text-align: center;
+  grid-area:  2 / 1 / 3 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.program-grid-content-tablet {
+  text-align: center;
+  grid-area:  2 / 1 / 3 / span 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.program-grid-content-desktop {
+  text-align: center;
+  grid-area:  2 / 1 / 3 / span 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.program-desktop-IPO {
+ display: none;
+}
+.program-desktop-IPA {
+ height: auto;
+ width: 80vw;
+ text-align: center;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.program-desktop-phone {
+ display: none;
+}
+.program-desktop-tablet {
+ height: auto;
+ width: 80vw;
+ text-align: center;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.program-desktop-desktop {
+ height: auto;
+ width: 80vw;
+ text-align: center;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.program-mobile-IPO {
+ height: 60vh;
+ width: auto;
+ text-align: center;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.program-mobile-IPA {
+ display: none;
+}
+.program-mobile-phone {
+ height: 60vh;
+ width: auto;
+ text-align: center;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.program-mobile-tablet {
+ display: none;
+}
+.program-mobile-desktop {
+ display: none;
+}
+.program-grid-heading-IPO {
+    font-family: 'Romantically Free For Personal', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    color: rgba(251, 215, 161, 1.0);
+}
+.program-grid-heading-IPA {
+    font-family: 'Romantically Free For Personal', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: rgba(251, 215, 161, 1.0);
+    display: block;
+}
+.program-grid-heading-phone {
+/*    font-family: 'Romantically Free For Personal', sans-serif;*/
+    font-size: 60px;
+    font-weight: 700;
+    color: rgba(251, 215, 161, 1.0);
+    display: block;
+}
+.program-grid-heading-tablet {
+    font-family: 'Romantically Free For Personal', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: rgba(251, 215, 161, 1.0);
+    display: block;
+}
+.program-grid-heading-desktop {
+    font-family: 'Romantically Free For Personal', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: rgba(251, 215, 161, 1.0);
+    display: block;
 }
